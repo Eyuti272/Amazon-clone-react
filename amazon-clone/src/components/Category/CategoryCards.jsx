@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './Category.module.css'
+import { Link } from 'react-router-dom'
 function CategoryCards({data}) {
     
   return (
@@ -7,7 +8,7 @@ function CategoryCards({data}) {
 
     <div className={style['category']}>
     
-      <a href="">
+      <Link to={`/category/${data.name}`}>
         <span>
            
             <h1>{data.title}</h1>
@@ -15,7 +16,7 @@ function CategoryCards({data}) {
         <img src={data.img} alt="" />
         
          <p>Shop Now</p>
-      </a>
+      </Link>
 
       </div>
     

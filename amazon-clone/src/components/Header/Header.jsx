@@ -16,7 +16,7 @@ const Header = () => {
     
           <div className={style["logo_container"]}>
             {/* logo */}
-            <Link to="#"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon-logo" /></Link>
+            <Link to="/"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon-logo" /></Link>
               {/* delivery */}
             <span>
                 {/* icon */}
@@ -52,23 +52,23 @@ const Header = () => {
 
           <div className={style["order_container"]}> 
             {/* resistration */}
-            <a href="">
+            <Link to="/auth">
               <p>Sign In</p>
               <span>Accounts & Lists</span>
-            </a>
+            </Link>
             {/* orders */}
 
-            <a href="" >
+            <Link to="/orders" >
               <p>Returns</p>
               <span>& Orders</span>
 
-            </a>
+            </Link>
             <div className={style["cart"]}>
-            <a href="">
+            <Link to="/cart">
                 {/* icon */}
               <FaShoppingCart size={35} />
                 <span>0</span>
-            </a>
+            </Link>
             </div>
           </div>
          
