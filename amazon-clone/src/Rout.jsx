@@ -9,6 +9,7 @@ import LayOut from './components/LayOut/LayOut';
 import SignUp from './Home/Auth/SignUp/SignUp'
 import Landing from './Home/Landing/Landing';
 import Results from './Home/Results/Results';
+import ProductDetail from './Home/ProductDeatail/ProductDetail';
 
 
 
@@ -22,6 +23,7 @@ const Rout = () => {
         <Route path='payment' element={<Payments />} />
         <Route path='cart' element={<Cart />} />
         <Route path='/category/:categoryName' element={<Results />} />
+        <Route path='/products/:productId' element={<ProductDetail />} />
         <Route path='orders' element={<Orders />} />
       </Route>
     </Routes>

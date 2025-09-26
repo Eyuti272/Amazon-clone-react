@@ -5,6 +5,7 @@ import axios from 'axios'
 import { ProductUrl } from '../../Api/EndPoint'
 import style from './Results.module.css'
 import ProductCards from '../../components/Product/ProductCards'
+import Loder from '../../components/Loder/Loder'
 
 const Results = () => {
    const { categoryName } = useParams()
@@ -68,7 +69,7 @@ const Results = () => {
           ))
         ) : (
           <p style={{padding:"20px"}}>
-            No products found in "{categoryName}".
+            <Loder />{categoryName}".
           </p>
         )}
        </div>
