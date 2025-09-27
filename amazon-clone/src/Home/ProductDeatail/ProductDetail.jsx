@@ -35,7 +35,10 @@ const ProductDetail = () => {
     return <p>No product found</p>;
   }
 
-  return <ProductCards product={product} flex={true} renderDesc={true} />;
+  return <ProductCards product={product} flex={true} renderDesc={true} 
+  renderAdd={true}
+  
+  />;
 };
 
 export default ProductDetail;

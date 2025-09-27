@@ -33,7 +33,7 @@ function Product() {
     isLoading? (<Loder />):( <section className={style['product_container']}>
      {
         Products.map((proitem)=>(
-           <ProductCards product={proitem} key={proitem.id} />
+           <ProductCards product={proitem} renderAdd={true} key={proitem.id} />
                ))
 
             }

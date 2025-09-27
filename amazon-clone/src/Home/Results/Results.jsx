@@ -65,7 +65,7 @@ const Results = () => {
        <div className={style['product_container']}> 
         {results.length > 0 ? (
           results.map((product) => (
-            <ProductCards key={product.id} product={product} />
+            <ProductCards key={product.id} product={product} renderDesc={false}  renderAdd={true}/>
           ))
         ) : (
           <p style={{padding:"20px"}}>
